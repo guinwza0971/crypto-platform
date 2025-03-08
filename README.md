@@ -139,6 +139,26 @@ Columns of the `expired` table:
 * MAKERFEE - maker's commission for instrument.
 * DAT - time the current row was written into the database.
 
+## API Configuration
+
+To set up your API credentials:
+
+1. Copy `.env.template` to a new file named `.env`:
+```bash
+cp .env.template .env
+```
+
+2. Edit the `.env` file and replace the placeholder values with your actual API credentials:
+```bash
+DERIBIT_API_KEY=your_actual_key
+DERIBIT_API_SECRET=your_actual_secret
+# ... etc
+```
+
+3. The `.env` file is automatically ignored by git to keep your credentials secure.
+
+4. Never commit your actual API keys to the repository.
+
 ## Launch the program
 
 It is recommended to debug the program on the test network first.
